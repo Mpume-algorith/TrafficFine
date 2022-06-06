@@ -1,0 +1,69 @@
+﻿@model IEnumerable<TrafficFine.Models.Fine>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Fines</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MotoristID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrafficOfficialID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VehicleRegNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Offence)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MotoristID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrafficOfficialID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VehicleRegNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Offence)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FineNo }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FineNo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FineNo })
+        </td>
+    </tr>
+}
+
+</table>
