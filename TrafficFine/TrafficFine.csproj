@@ -128,6 +128,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\FineController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MotoristController.cs" />
+    <Compile Include="Controllers\TrafficOfficialController.cs" />
+    <Compile Include="Controllers\VehicleController.cs" />
     <Compile Include="DAL\TrafficContext.cs" />
     <Compile Include="DAL\TrafficInitializer.cs" />
     <Compile Include="Global.asax.cs">
@@ -181,6 +184,21 @@
     <Content Include="Views\Fine\Details.cshtml" />
     <Content Include="Views\Fine\Edit.cshtml" />
     <Content Include="Views\Fine\Index.cshtml" />
+    <Content Include="Views\Motorist\Create.cshtml" />
+    <Content Include="Views\Motorist\Delete.cshtml" />
+    <Content Include="Views\Motorist\Details.cshtml" />
+    <Content Include="Views\Motorist\Edit.cshtml" />
+    <Content Include="Views\Motorist\Index.cshtml" />
+    <Content Include="Views\TrafficOfficial\Create.cshtml" />
+    <Content Include="Views\TrafficOfficial\Delete.cshtml" />
+    <Content Include="Views\TrafficOfficial\Details.cshtml" />
+    <Content Include="Views\TrafficOfficial\Edit.cshtml" />
+    <Content Include="Views\TrafficOfficial\Index.cshtml" />
+    <Content Include="Views\Vehicle\Create.cshtml" />
+    <Content Include="Views\Vehicle\Delete.cshtml" />
+    <Content Include="Views\Vehicle\Details.cshtml" />
+    <Content Include="Views\Vehicle\Edit.cshtml" />
+    <Content Include="Views\Vehicle\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

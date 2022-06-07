@@ -66,7 +66,11 @@ namespace TrafficFine.DAL
                 new Vehicle{RegNumber="EC 1092", MotoristID="9707115252082", Make="Mercedez Benz", Model="C300 AMG", Year= 2020, Colour="White", },
 
             };
-
+            foreach (Vehicle v in vehicles)
+            {
+                context.Vehicles.Add(v);
+            }
+            context.SaveChanges();
 
         }
     }
